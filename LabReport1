@@ -1,0 +1,4 @@
+# Lab Report 1
+## Name: Daniel J. Groten > PID: A17704281
+cd: Short for change directory, the cd file command changes the directory that the terminal is operating in. This is useful because if you attempt to use certain commands in the wrong file your code could fail.
+ls: Short for list files, the ls file command lists the names of all of the files and folders in the current directory. This is useful because it lets you know what files and folders your terminal has access to.
