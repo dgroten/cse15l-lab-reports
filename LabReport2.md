@@ -4,11 +4,7 @@
 
 ### Part 1
 
-Code:
-
 ![Image](image1.png)
-
-Server 1:
 
 ![Image](image2.png)
 
@@ -19,8 +15,6 @@ The field "string" changes every time a new message is entered in the chat by ad
 Initially, the string is empty, but then my code finds the query in the URL and separates the user and the message from the query and adds them to the field.
 
 Then, the updated field is returned and appears on the website.
-
-Server 2:
 
 ![Image](image3.png)
 
