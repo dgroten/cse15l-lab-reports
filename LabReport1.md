@@ -5,7 +5,7 @@
 
 Command: `$ cd`
 
-Output: ` ` (no output)
+Output: (no output)
 
 Command: `$ ls`
 
@@ -13,7 +13,7 @@ Output: `Hello.class  Hello.java  messages/  README`
 
 Command: `$ cat`
 
-Output: ` ` (no output, frozen terminal)
+Output: (no output, frozen terminal)
 
 **Absolute Path:**
 
@@ -33,7 +33,7 @@ For `cat`, it appeared that the terminal became frozen, not outputting anything 
 
 Command: `$ cd messages`
 
-Output: ` ` (no output)
+Output: (no output)
 
 Command: `$ ls messages`
 
