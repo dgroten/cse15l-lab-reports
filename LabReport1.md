@@ -19,6 +19,10 @@ Output: (no output, frozen terminal)
 
 `~/Downloads/cse11-pa8-starter-main/lecture1` (same absolute path for all three commands)
 
+
+
+
+
 **Explanations:**
 
 For `cd`, I received no output because the command is not supposed to yield any output. It is only supposed to change the directory of the terminal which is what it did. Since I gave it no specific directory, it would automatically assume I desired the home directory. This is not an error.
