@@ -8,19 +8,31 @@
 
 ![Image](image2.png)
 
-The method handleRequest is called. The relevant argument is the URL and the relevant field is the field called `string` which stores the chat log.
+The methods `handleRequest`, `getQuery`, and `split` are called.
 
-The field `string` changes every time a new message is entered in the chat by adding the new message to all of the preexisting messages as a new line.
+The method `handleRequest` takes the argument `http://localhost:1304/add-message?s=Hello&user=jpolitz` of type `URI`, the method `getQuery` takes no arguments, and the method `split` takes the argument `=` of type `string`.
 
-Initially, `string` is empty, but then my code finds the query in the URL and separates the user and the message from the query and adds them to `string`.
+The value of the field `url` is `http://localhost:1304/add-message?s=Hello&user=jpolitz` of type `URI`.
 
-Then, the updated `string` is returned and appears on the website.
+The value of the field `string` before `handleRequest` is called is an empty string and the value of the field `string` after `handleRequest` is called is the string `jpolitz: Hello\n`.
+
+Initially, the field `string` is empty but then my code finds the query in the URL using the `getQuery` method and separates the user and the message from the query using the `split` method before adding the user and message to the field `string`.
+
+Then, the updated `string` is returned and appears on the website as the string `jpolitz: Hello\n` (the \n isn't visible on the website because it represents the newline character).
 
 ![Image](image3.png)
 
-Everything is the same as the previous example, but this time the initial `string` field is not zero. It already contains the previous user and message.
+The methods `handleRequest`, `getQuery`, and `split` are called.
 
-Instead of erasing the previous user and message, my code takes the new user and message and adds them to `string` before returning `string` so that all messages are displayed
+The method `handleRequest` takes the argument `http://localhost:1304/add-message?s=How are you&user=yash` of type `URI`, the method `getQuery` takes no arguments, and the method `split` takes the argument `=` of type `string`.
+
+The value of the field `url` is `http://localhost:1304/add-message?s=How are you&user=yash` of type `URI`.
+
+The value of the field `string` before `handleRequest` is called is `jpolitz: Hello\n` and the value of the field `string` after `handleRequest` is called is the string `jpolitz: Hello\nyash: How are you\n`.
+
+Initially, the field `string` is `jpolitz: Hello\n` but then my code finds the query in the URL using the `getQuery` method and separates the user and the message from the query using the `split` method before adding the user and message to the field `string`.
+
+Then, the updated `string` is returned and appears on the website as the string `jpolitz: Hello\nyash: How are you\n` (the \n isn't visible on the website because it represents the newline character).
 
 ### Part 2
 
