@@ -3,9 +3,7 @@
 ## By Daniel J. Groten
 
 ### Step 4
--take a screenshot
--write down every key press
--sumarize every command and explain what every key press did
+
 ![Image](step4.png)
 
 Key Presses: `ssh dgroten@ieng6.ucsd.edu<enter>`
@@ -58,8 +56,10 @@ Explanation: I press the up-arrow key two times in order to go back to the previ
 ### Step 9
 
 ![Image](step9.png)
+
 *I accidentally made a mistake where I used an exclamation mark in my git commit message which caused the terminal to throw an error. In my key presses and explanation I will ignore this error because it was unintended and not a necessary part of my process.
 
 Key Presses: `git add .<enter>git commit -m "this is step 9"<enter>`
 
-Explanation: 
+Explanation: The `git add .` command adds all of my changes (the period signifys that I want to add all of my changes and not just a potion of them). I used `<enter>` to run the command.
+The `git commit -m` command commits all of the changes I just added to my GitHub repository. The message in the quotation marks following the command allows me to enter any message I want so that it is easy to remember which commit changed which files. In this case, I used the message to remind myself that I am on step 9. Finally, I used `<enter>` to run the command.
